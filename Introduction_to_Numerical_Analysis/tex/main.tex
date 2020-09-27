@@ -1,0 +1,29 @@
+\documentclass[uplatex]{jsarticle}
+
+\title{タイトル名}
+\author{名前}
+\date{\today}
+
+\begin{document}
+    \maketitle
+    %Hello World!
+\section{数式確認用}
+この仮定を入れない場合
+$$
+    \frac{d\theta}{dt}=v\ \rightarrow\ \frac{dv}{dt}=-\frac{g}{l}\sin\theta
+$$
+となるが、この微分方程式を差分近似を用いて表すと
+$$
+    \frac{\theta_{i+1}-\theta_{i}}{\Delta t}=v_{i},\ \frac{v_{i+1}}{v_{i}}=-\frac{g}{l}\sin\theta_{i}
+$$
+となるので、これを整理すると
+$$
+    \theta_{i+1}=\theta_{i}+v_{i}\Delta t
+$$
+$$
+    v_{i+1}=v_{i}-\frac{g}{l}\Delta t\sin\theta_{i}
+$$
+が得られる。それではこの差分式をPythonでプログラミングしてみると
+%\end{数式確認用}
+\end{document}
+
